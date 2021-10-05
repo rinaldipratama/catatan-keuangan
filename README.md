@@ -1,10 +1,11 @@
 # Deskripsi
 
-Aplikasi simple untuk mencatat keuangan berbasis web.
+Aplikasi simple untuk mencatat keuangan berbasis web dan menggunakan framework PHP CodeIgniter.
 
 # Versi
 
 - PHP yang direkomendasikan >= 7.0
+- CodeIgniter 3.1.11
 - MySQL >= 5.0
 
 # Konfigurasi
