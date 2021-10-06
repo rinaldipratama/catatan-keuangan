@@ -42,6 +42,7 @@
             type: "POST",
             data: {
                 'data-form' :$("#data-form").serialize(),
+                csrf_test_name: $.cookie('csrf_cookie_name')
             },
             dataType: "JSON",
             success: function(data)

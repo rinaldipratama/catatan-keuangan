@@ -39,6 +39,7 @@
                 data: {
                     'server_side': serverSide,
                     'filter': $("#filter-form").serialize(),
+                    csrf_test_name: $.cookie('csrf_cookie_name')
                 },
                 type: 'POST'
             },
@@ -81,6 +82,7 @@
                 data: {
                         id: $id,
                         status: $status,
+                        csrf_test_name: $.cookie('csrf_cookie_name')
                     },
                 dataType: "JSON",
                 success: function(data)
