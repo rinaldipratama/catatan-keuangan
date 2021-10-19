@@ -51,10 +51,10 @@ class Transaction_m extends CI_Model
             $this->db->where("DATE_FORMAT(a.create_date,'%Y-%m-%d') <=", $filter['range_end']);
         }
 
-        if ($filter['range_start'] == '' && $filter['range_end'] == '') {
-            $current_mount = date("Y-m");
-            $this->db->where("DATE_FORMAT(a.create_date,'%Y-%m')", $current_mount);
-        }
+        // if ($filter['range_start'] == '' && $filter['range_end'] == '') {
+        //     $current_mount = date("Y-m");
+        //     $this->db->where("DATE_FORMAT(a.create_date,'%Y-%m')", $current_mount);
+        // }
 
         $this->db->where('a.status', 'active'); //onli active item
         $this->db->join('category b', 'a.category_id = b.category_id', 'left'); 
