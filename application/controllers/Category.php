@@ -28,6 +28,7 @@ class Category extends CI_Controller {
 	{
 		$this->pageInfo['nav_ids'][] = "{$this->pageInfo['table_base']}_list";
 		$this->pageInfo['page_title'][] = "List";
+		$this->load->view('template/header');
 		$this->load->view("{$this->pageInfo['table_base']}/lists");
 	}
 
@@ -35,6 +36,7 @@ class Category extends CI_Controller {
 	{
 		$this->pageInfo['nav_ids'][] = "{$this->pageInfo['table_base']}_create";
 		$this->pageInfo['page_title'][] = "Create";
+		$this->load->view('template/header');
 		$this->load->view("{$this->pageInfo['table_base']}/create");
     }
     
@@ -46,6 +48,7 @@ class Category extends CI_Controller {
             'detail' => $this->category_m->get_detail($id),
             'id' => $id,
         ];
+		$this->load->view('template/header');
 		$this->load->view("{$this->pageInfo['table_base']}/update", $data);
 	}
 
