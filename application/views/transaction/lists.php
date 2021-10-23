@@ -1,4 +1,3 @@
-<?php $this->load->view("template/header");?>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-8 col-sm-offset-2">

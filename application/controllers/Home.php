@@ -43,6 +43,8 @@ class Home extends CI_Controller {
             'total_out' => $total_out,
             'total' => $total,
         ];
+		$this->load->view('template/header');
 		$this->load->view('home', $data);
+		$this->load->view('template/footer');
 	}
 }

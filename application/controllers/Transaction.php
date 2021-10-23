@@ -24,6 +24,7 @@ class Transaction extends CI_Controller {
 	{
 		$this->pageInfo['nav_ids'][] = "{$this->pageInfo['table_base']}_list";
 		$this->pageInfo['page_title'][] = "List";
+		$this->load->view('template/header');
 		$this->load->view("{$this->pageInfo['table_base']}/lists");
 	}
 
@@ -34,6 +35,7 @@ class Transaction extends CI_Controller {
         $data = [
             'category' => $this->category_m->get_datalist('active'),
         ];
+		$this->load->view('template/header');
 		$this->load->view("{$this->pageInfo['table_base']}/create", $data);
     }
     
@@ -46,6 +48,7 @@ class Transaction extends CI_Controller {
             'id' => $id,
             'category' => $this->category_m->get_datalist('active'),
         ];
+		$this->load->view('template/header');
 		$this->load->view("{$this->pageInfo['table_base']}/update", $data);
 	}
 
