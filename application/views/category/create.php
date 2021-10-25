@@ -26,7 +26,7 @@
                 </div>
             </form>
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="button" onclick="save()" class="btn btn-default">Save</button>
+                <button type="button" onclick="save()" class="btn btn-primary">Save</button>
             </div>
         </div>
     </div>
