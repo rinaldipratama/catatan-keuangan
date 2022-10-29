@@ -50,7 +50,7 @@ class Category extends CI_Controller {
             'detail' => $this->category_m->get_detail($id),
             'id' => $id,
         ];
-		$data['title'] = "Update Kategori";
+		$data['title'] = "Buat Kategori";
 		$this->load->view('template/header',$data);
 		$this->load->view("{$this->pageInfo['table_base']}/update", $data);
 	}
