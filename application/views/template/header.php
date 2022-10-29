@@ -68,7 +68,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?=site_url('category')?>">List Kategori</a>
+                        <a class="collapse-item" href="<?=site_url('category')?>">Daftar Kategori</a>
                         <a class="collapse-item" href="<?=site_url('category/create')?>">Tambah Kategori</a>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?=site_url('transaction')?>">List Transaksi</a>
+                        <a class="collapse-item" href="<?=site_url('transaction')?>">Daftar Transaksi</a>
                         <a class="collapse-item" href="<?=site_url('transaction/create')?>">Tambah Transaksi</a>
                     </div>
                 </div>
