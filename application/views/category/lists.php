@@ -3,7 +3,7 @@
         <div class="col-md-8 col-sm-offset-2">
             <form id="filter-form" class="form-inline">
                 <div class="form-group">
-                    <label>Type</label>
+                    <label>Tipe</label>
                     <select class="form-control" name="type" onchange="return init_datatable()">
                         <option value="">All</option>
                         <option value="in">Pemasukan</option>
